@@ -1,18 +1,19 @@
 /* eslint-disable react-hooks/set-state-in-effect -- Détection de capacité
-   navigateur (WebGL) : le setState dans useEffect est ici légitime car on
-   synchronise l'état React avec une capacité externe non observable. */
+   navigateur (WebGL) : setState dans useEffect est légitime ici. */
 "use client";
 
-import { Suspense, lazy, useState, useEffect } from "react";
+import dynamic from "next/dynamic";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { ArrowDown, Shield, Truck } from "lucide-react";
 import Link from "next/link";
 import { company } from "@/data/site-data";
 import { Button } from "@/components/ui/button";
 
-// Lazy load de la scène 3D (Three.js ne tourne pas en SSR)
-const HeroScene = lazy(() =>
-  import("@/components/three/HeroScene").then((m) => ({ default: m.HeroScene }))
+// Scène 3D chargée côté client uniquement (Three.js utilise WebGL/window)
+const HeroScene = dynamic(
+  () => import("@/components/three/HeroScene").then((m) => m.HeroScene),
+  { ssr: false }
 );
 
 // Détection WebGL pour fallback
@@ -44,9 +45,7 @@ export function Hero() {
       {/* Scène 3D en arrière-plan */}
       {hasWebGL && (
         <div className="absolute inset-0">
-          <Suspense fallback={null}>
-            <HeroScene />
-          </Suspense>
+          <HeroScene />
         </div>
       )}
 

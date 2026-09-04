@@ -1,13 +1,21 @@
 "use client";
 
-import { lazy, Suspense } from "react";
+import dynamic from "next/dynamic";
 import { MapPin, Clock } from "lucide-react";
 import { company } from "@/data/site-data";
 import { Reveal } from "@/lib/reveal";
 
-// Carte Leaflet chargée côté client uniquement
-const MapInner = lazy(() =>
-  import("@/components/sections/MapInner").then((m) => ({ default: m.MapInner }))
+// Carte Leaflet chargée côté client uniquement (Leaflet utilise window)
+const MapInner = dynamic(
+  () => import("@/components/sections/MapInner").then((m) => m.MapInner),
+  {
+    ssr: false,
+    loading: () => (
+      <div className="h-full w-full flex items-center justify-center text-muted-foreground text-sm">
+        Chargement de la carte…
+      </div>
+    ),
+  }
 );
 
 export function Location() {
@@ -38,15 +46,7 @@ export function Location() {
           {/* Carte */}
           <Reveal className="lg:col-span-3" delay={0}>
             <div className="h-[360px] lg:h-full min-h-[360px] rounded-2xl overflow-hidden border border-border shadow-mandiba bg-secondary">
-              <Suspense
-                fallback={
-                  <div className="h-full w-full flex items-center justify-center text-muted-foreground text-sm">
-                    Chargement de la carte…
-                  </div>
-                }
-              >
-                <MapInner />
-              </Suspense>
+              <MapInner />
             </div>
           </Reveal>
 
