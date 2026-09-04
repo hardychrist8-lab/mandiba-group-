@@ -19,7 +19,7 @@ export function CeoMessage() {
             <div className="relative mx-auto max-w-md">
               {/* Décor arrière */}
               <div
-                className="absolute -inset-4 rounded-3xl bg-mandiba-gradient opacity-10 blur-2xl"
+                className="absolute -inset-4 rounded-3xl bg-mandiba-dark opacity-10 blur-2xl"
                 aria-hidden="true"
               />
               <div className="relative aspect-[4/5] rounded-2xl overflow-hidden border border-border shadow-mandiba-lg bg-secondary">

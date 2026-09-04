@@ -5,17 +5,17 @@ import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import { company } from "@/data/site-data";
 
-// Marqueur personnalisé bleu Mandiba (évite le bug des icônes par défaut)
+// Marqueur personnalisé rouge Mandiba (couleur du logo)
 const mandibaIcon = L.divIcon({
   className: "mandiba-marker",
   html: `<div style="
     width: 28px;
     height: 28px;
-    background: #0f2b4c;
+    background: #e31e24;
     border: 3px solid #ffffff;
     border-radius: 50% 50% 50% 0;
     transform: rotate(-45deg);
-    box-shadow: 0 4px 12px rgba(15, 43, 76, 0.4);
+    box-shadow: 0 4px 12px rgba(227, 30, 36, 0.5);
   "></div>`,
   iconSize: [28, 28],
   iconAnchor: [14, 28],

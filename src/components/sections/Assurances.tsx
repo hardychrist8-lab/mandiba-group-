@@ -54,7 +54,7 @@ export function Assurances() {
 
           {/* Carte CTA — ferme la grille sur 5 éléments */}
           <Reveal delay={0.5}>
-            <article className="h-full p-8 rounded-2xl bg-mandiba-gradient text-white flex flex-col justify-center items-center text-center">
+            <article className="h-full p-8 rounded-2xl bg-mandiba-dark text-white flex flex-col justify-center items-center text-center">
               <h3 className="text-xl font-bold mb-3">
                 Besoin d'un conseil ?
               </h3>

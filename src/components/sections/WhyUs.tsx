@@ -8,7 +8,7 @@ export function WhyUs() {
   return (
     <section
       id="pourquoi"
-      className="py-20 lg:py-32 bg-mandiba-gradient relative overflow-hidden"
+      className="py-20 lg:py-32 bg-mandiba-dark relative overflow-hidden"
       aria-labelledby="whyus-title"
     >
       {/* Décor */}

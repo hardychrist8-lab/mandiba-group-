@@ -75,6 +75,7 @@ export const activities = [
     icon: "Shield",
     description:
       "Une protection adaptée à chaque aspect de votre vie, pour avancer l'esprit tranquille.",
+    image: "/images/assurance-card.jpg",
     services: [
       { name: "Assurance Vie", icon: "Heart" },
       { name: "Auto-Moto", icon: "Car" },
@@ -89,6 +90,7 @@ export const activities = [
     icon: "Truck",
     description:
       "Des solutions de mobilité complètes pour vos besoins quotidiens et professionnels.",
+    image: "/images/transport-card.jpg",
     services: [
       { name: "Location", icon: "Key" },
       { name: "Vente de voitures", icon: "BadgeCheck" },

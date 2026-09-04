@@ -8,7 +8,7 @@ export function Transport() {
   return (
     <section
       id="transport"
-      className="py-20 lg:py-32 bg-mandiba-gradient-soft"
+      className="py-20 lg:py-32 bg-mandiba-light"
       aria-labelledby="transport-title"
     >
       <div className="container-mandiba">

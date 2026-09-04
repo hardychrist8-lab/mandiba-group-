@@ -9,7 +9,7 @@ export function Contact() {
   return (
     <section
       id="contact"
-      className="py-20 lg:py-32 bg-mandiba-gradient-soft"
+      className="py-20 lg:py-32 bg-mandiba-light"
       aria-labelledby="contact-title"
     >
       <div className="container-mandiba">

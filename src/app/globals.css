@@ -5,8 +5,8 @@
 
 /* ============================================================
    MANDIBA GROUP — Design System
-   Palette : Bleu profond + Blanc (strict)
-   Couleurs en hex pour compatibilité navigateur maximale.
+   Palette issue du logo : Rouge #E31E24 + Noir #1A1A1A + Gris #C0C0C0 + Blanc
+   Ambiance : Corporate moderne, industriel dynamique, premium.
    ============================================================ */
 
 @theme inline {
@@ -58,53 +58,53 @@
 
   /* Blanc pur */
   --background: #ffffff;
-  /* Bleu très sombre pour textes */
-  --foreground: #0a1929;
+  /* Noir profond (charbon) */
+  --foreground: #1a1a1a;
 
-  /* Cartes et popovers : blanc pur */
+  /* Cartes et popovers : blanc */
   --card: #ffffff;
-  --card-foreground: #0a1929;
+  --card-foreground: #1a1a1a;
   --popover: #ffffff;
-  --popover-foreground: #0a1929;
+  --popover-foreground: #1a1a1a;
 
-  /* PRIMAIRE : Bleu profond Mandiba #0f2b4c */
-  --primary: #0f2b4c;
+  /* PRIMAIRE : Rouge Mandiba #E31E24 */
+  --primary: #e31e24;
   --primary-foreground: #ffffff;
 
-  /* Secondaire : bleu clair pour fonds discrets */
-  --secondary: #eef4fb;
-  --secondary-foreground: #0f2b4c;
+  /* Secondaire : gris très clair */
+  --secondary: #f5f5f5;
+  --secondary-foreground: #1a1a1a;
 
-  /* Muted : bleu très clair */
-  --muted: #f0f5fa;
-  --muted-foreground: #5a6b7d;
+  /* Muted : gris clair */
+  --muted: #f5f5f5;
+  --muted-foreground: #6b7280;
 
-  /* Accent : bleu medium pour hover / mise en valeur */
-  --accent: #1e3a5f;
+  /* Accent : noir profond */
+  --accent: #1a1a1a;
   --accent-foreground: #ffffff;
 
   --destructive: #dc2626;
 
-  /* Borders : bleu très clair */
-  --border: #dce7f2;
-  --input: #dce7f2;
-  --ring: #0f2b4c;
+  /* Borders : gris clair */
+  --border: #e5e5e5;
+  --input: #e5e5e5;
+  --ring: #e31e24;
 
-  /* Charts : nuances de bleu */
-  --chart-1: #0f2b4c;
-  --chart-2: #1e3a5f;
-  --chart-3: #2d5a8f;
-  --chart-4: #3a6ea5;
-  --chart-5: #5a8cc0;
+  /* Charts : rouge + nuances de gris */
+  --chart-1: #e31e24;
+  --chart-2: #1a1a1a;
+  --chart-3: #6b7280;
+  --chart-4: #c0c0c0;
+  --chart-5: #9ca3af;
 
   --sidebar: #ffffff;
-  --sidebar-foreground: #0a1929;
-  --sidebar-primary: #0f2b4c;
+  --sidebar-foreground: #1a1a1a;
+  --sidebar-primary: #e31e24;
   --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: #eef4fb;
-  --sidebar-accent-foreground: #0f2b4c;
-  --sidebar-border: #dce7f2;
-  --sidebar-ring: #0f2b4c;
+  --sidebar-accent: #f5f5f5;
+  --sidebar-accent-foreground: #1a1a1a;
+  --sidebar-border: #e5e5e5;
+  --sidebar-ring: #e31e24;
 }
 
 @layer base {
@@ -125,44 +125,58 @@
    ============================================================ */
 
 @layer utilities {
-  /* Dégradé bleu Mandiba pour fonds de section */
-  .bg-mandiba-gradient {
-    background: linear-gradient(135deg, #0f2b4c 0%, #0a1929 100%);
+  /* Fond sombre corporate (noir → charbon) avec lueur rouge subtile */
+  .bg-mandiba-dark {
+    background:
+      radial-gradient(ellipse at top right, rgba(227, 30, 36, 0.12) 0%, transparent 50%),
+      linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%);
   }
 
-  .bg-mandiba-gradient-soft {
-    background: linear-gradient(180deg, #eef4fb 0%, #ffffff 100%);
+  /* Fond sombre plus profond pour footer/sections premium */
+  .bg-mandiba-darker {
+    background:
+      radial-gradient(ellipse at bottom left, rgba(227, 30, 36, 0.08) 0%, transparent 60%),
+      linear-gradient(180deg, #0d0d0d 0%, #1a1a1a 100%);
   }
 
-  /* Texte en dégradé bleu */
+  /* Fond gris très clair pour alternance */
+  .bg-mandiba-light {
+    background: linear-gradient(180deg, #f5f5f5 0%, #ffffff 100%);
+  }
+
+  /* Texte en dégradé rouge → noir */
   .text-mandiba-gradient {
-    background: linear-gradient(135deg, #0f2b4c 0%, #1e3a5f 100%);
+    background: linear-gradient(135deg, #e31e24 0%, #1a1a1a 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
   }
 
-  /* Effet verre dépoli pour navbar */
+  /* Effet verre dépoli sombre */
   .glass {
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
   }
 
   .glass-dark {
-    background: rgba(15, 43, 76, 0.85);
+    background: rgba(13, 13, 13, 0.85);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
   }
 
-  /* Ombre douce bleutée */
+  /* Ombres */
   .shadow-mandiba {
-    box-shadow: 0 10px 40px -10px rgba(15, 43, 76, 0.15);
+    box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.15);
   }
 
   .shadow-mandiba-lg {
-    box-shadow: 0 25px 60px -15px rgba(15, 43, 76, 0.25);
+    box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.3);
+  }
+
+  .shadow-mandiba-red {
+    box-shadow: 0 10px 40px -10px rgba(227, 30, 36, 0.35);
   }
 
   /* Conteneur standard */
@@ -178,25 +192,40 @@
       padding-inline: 2.5rem;
     }
   }
+
+  /* Motif diagonal inspiré du logo (bandes grises/rouges/noires) */
+  .pattern-mandiba-diagonal {
+    background-image: repeating-linear-gradient(
+      65deg,
+      transparent,
+      transparent 40px,
+      rgba(227, 30, 36, 0.03) 40px,
+      rgba(227, 30, 36, 0.03) 42px,
+      transparent 42px,
+      transparent 80px,
+      rgba(26, 26, 26, 0.04) 80px,
+      rgba(26, 26, 26, 0.04) 82px
+    );
+  }
 }
 
 /* ============================================================
-   Scrollbar personnalisée (bleu discret)
+   Scrollbar personnalisée (rouge/noir)
    ============================================================ */
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: #f0f5fa;
+  background: #f5f5f5;
 }
 ::-webkit-scrollbar-thumb {
-  background: #5a8cc0;
+  background: #1a1a1a;
   border-radius: 9999px;
-  border: 2px solid #f0f5fa;
+  border: 2px solid #f5f5f5;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #1e3a5f;
+  background: #e31e24;
 }
 
 /* ============================================================
@@ -222,8 +251,8 @@
 }
 .leaflet-popup-content-wrapper {
   border-radius: 0.75rem;
-  box-shadow: 0 10px 40px -10px rgba(15, 43, 76, 0.2);
+  box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.2);
 }
 .leaflet-popup-tip {
-  box-shadow: 0 4px 12px -4px rgba(15, 43, 76, 0.2);
+  box-shadow: 0 4px 12px -4px rgba(0, 0, 0, 0.2);
 }

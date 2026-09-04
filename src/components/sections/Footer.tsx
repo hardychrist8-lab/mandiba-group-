@@ -8,7 +8,7 @@ import { company, nav, footerServices, legalLinks } from "@/data/site-data";
 export function Footer() {
   return (
     <footer
-      className="mt-auto bg-mandiba-gradient text-white"
+      className="mt-auto bg-mandiba-darker text-white"
       aria-labelledby="footer-heading"
     >
       <h2 id="footer-heading" className="sr-only">
