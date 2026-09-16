@@ -1,6 +1,6 @@
 "use client";
 
-import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { Phone, Mail } from "lucide-react";
 import { company } from "@/data/site-data";
 import { Reveal } from "@/lib/reveal";
 import { Button } from "@/components/ui/button";
@@ -30,7 +30,9 @@ export function Contact() {
           </p>
         </Reveal>
 
-        <div className="grid md:grid-cols-2 gap-6 lg:gap-8 max-w-5xl mx-auto">
+        {/* 2 cartes seulement : Téléphone + Email
+            (Adresse et Horaires sont dans la section Localisation juste au-dessus) */}
+        <div className="grid md:grid-cols-2 gap-6 lg:gap-8 max-w-3xl mx-auto">
           {/* Téléphones — cliquables */}
           <Reveal delay={0}>
             <article className="h-full p-8 rounded-2xl bg-card border border-border hover:shadow-mandiba transition-all duration-300">
@@ -94,46 +96,6 @@ export function Contact() {
                   </a>
                 </Button>
               </div>
-            </article>
-          </Reveal>
-
-          {/* Adresse */}
-          <Reveal delay={0.3}>
-            <article className="h-full p-8 rounded-2xl bg-card border border-border hover:shadow-mandiba transition-all duration-300">
-              <div className="flex items-center gap-4 mb-6">
-                <div className="flex items-center justify-center h-12 w-12 rounded-xl bg-primary/10 text-primary">
-                  <MapPin className="h-6 w-6" />
-                </div>
-                <h3 className="text-xl font-bold text-foreground">Adresse</h3>
-              </div>
-              <p className="text-foreground/80 leading-relaxed">
-                {company.address.full}
-              </p>
-              <a
-                href="#localisation"
-                className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-primary hover:gap-2 transition-all"
-              >
-                Voir sur la carte
-                <MapPin className="h-4 w-4" />
-              </a>
-            </article>
-          </Reveal>
-
-          {/* Horaires */}
-          <Reveal delay={0.45}>
-            <article className="h-full p-8 rounded-2xl bg-card border border-border hover:shadow-mandiba transition-all duration-300">
-              <div className="flex items-center gap-4 mb-6">
-                <div className="flex items-center justify-center h-12 w-12 rounded-xl bg-primary/10 text-primary">
-                  <Clock className="h-6 w-6" />
-                </div>
-                <h3 className="text-xl font-bold text-foreground">Horaires</h3>
-              </div>
-              <p className="text-foreground/80 leading-relaxed">
-                {company.hours.days}
-              </p>
-              <p className="text-2xl font-bold text-primary mt-2">
-                {company.hours.short}
-              </p>
             </article>
           </Reveal>
         </div>

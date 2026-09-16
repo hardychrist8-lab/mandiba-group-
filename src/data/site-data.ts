@@ -16,7 +16,7 @@ export const company = {
   signature: "Transport & Assurances",
   tagline: "Des solutions pour avancer, des protections pour vous accompagner.",
   description:
-    "MANDIBA GROUP est une société ivoirienne spécialisée dans le transport et les assurances, basée à Abidjan.",
+    "MANDIBA GROUP Transport — transport, location de véhicules, import-export et assurances à Abidjan, Côte d'Ivoire.",
   address: {
     short: "Abidjan, Cocody Angré Château",
     full: "Abidjan, Cocody Angré Château, Côte d'Ivoire",
