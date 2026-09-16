@@ -71,8 +71,9 @@ export function VehicleDetail({ vehicle }: { vehicle: Vehicle }) {
         Retour au catalogue
       </button>
 
-      {/* Carrousel photos */}
-      <div className="relative aspect-[16/10] rounded-2xl overflow-hidden bg-secondary shadow-mandiba mb-6">
+      {/* Carrousel photos — taille réduite (max-w + ratio plus court) */}
+      <div className="w-full max-w-2xl mx-auto">
+        <div className="relative aspect-[16/9] rounded-2xl overflow-hidden bg-secondary shadow-mandiba mb-6">
         <AnimatePresence mode="wait">
           <motion.div
             key={currentPhoto}
@@ -139,6 +140,7 @@ export function VehicleDetail({ vehicle }: { vehicle: Vehicle }) {
           ))}
         </div>
       )}
+      </div>
 
       {/* Infos */}
       <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-6">
