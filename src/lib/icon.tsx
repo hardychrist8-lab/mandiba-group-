@@ -18,6 +18,7 @@ import {
   Award,
   MapPin,
   Handshake,
+  Wrench,
   type LucideIcon,
 } from "lucide-react";
 
@@ -36,6 +37,7 @@ const iconMap: Record<string, LucideIcon> = {
   Award,
   MapPin,
   Handshake,
+  Wrench,
 };
 
 interface IconProps {

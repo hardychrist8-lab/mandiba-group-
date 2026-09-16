@@ -18,13 +18,13 @@ export const company = {
   description:
     "MANDIBA GROUP est une société ivoirienne spécialisée dans le transport et les assurances, basée à Abidjan.",
   address: {
-    short: "Abidjan, Cocody Angré Extension",
-    full: "Abidjan, Cocody Angré Extension, Côte d'Ivoire",
+    short: "Abidjan, Cocody Angré Château",
+    full: "Abidjan, Cocody Angré Château, Côte d'Ivoire",
     city: "Abidjan",
-    district: "Cocody Angré Extension",
+    district: "Cocody Angré Château",
     country: "Côte d'Ivoire",
   },
-  email: "MandibaGroup@gmail.com",
+  email: "info@mandibagrouptransport.com",
   phones: [
     { label: "Fixe", number: "27 24 54 96 87", tel: "+2252724549687" },
     { label: "Mobile", number: "05 44 86 12 66", tel: "+2250544861266" },
@@ -32,26 +32,24 @@ export const company = {
   ],
   hours: {
     label: "Horaires",
-    value: "Lundi – Vendredi : 08h00 – 17h00",
+    value: "Lundi – Samedi : 08h00 – 17h00",
     short: "08h00 – 17h00",
-    days: "Lundi – Vendredi",
+    days: "Lundi – Samedi",
   },
-  // Coordonnées GPS approximatives du quartier Cocody Angré (Abidjan)
-  // À remplacer par les coordonnées exactes lorsque disponibles.
-  // Ne pas inventer une précision fictive.
+  // Coordonnées GPS exactes : Boulangerie Flamand, Boulevard Charles Bauza Donwahi
   map: {
-    lat: 5.3637,
-    lng: -4.0076,
-    zoom: 13,
-    label: "Cocody Angré Extension, Abidjan",
+    lat: 5.4168625,
+    lng: -3.9644820,
+    zoom: 17,
+    label: "Boulangerie Flamand, Boulevard Charles Bauza Donwahi, Cocody, Abidjan",
   },
   ceo: {
     name: "Toure Said",
     role: "PDG — MANDIBA GROUP",
     photo: "/images/pdg-toure-said.jpg",
-    // ⚠️ Texte PROVISOIRE — à remplacer par le véritable message du PDG
+    // Message du PDG
     message:
-      "Chez MANDIBA GROUP, nous plaçons la confiance, la proximité et la qualité de service au cœur de notre engagement. Notre ambition est d'accompagner nos clients avec des solutions adaptées dans les domaines du transport et de l'assurance, tout en construisant une relation durable fondée sur la confiance.",
+      "Chez MANDIBA GROUP TRANSPORT, nous plaçons la qualité de service au cœur de notre engagement. Notre ambition est de faciliter la mobilité de nos concitoyens et de créer un cadre d'assurance pour les couches sociales les plus modestes.",
   },
   logo: "/images/mandiba-logo.png",
   // Pas de réseaux sociaux officiels — ne pas afficher de liens
@@ -89,10 +87,11 @@ export const activities = [
     title: "Transport",
     icon: "Truck",
     description:
-      "Des solutions de mobilité complètes pour vos besoins quotidiens et professionnels.",
+      "Des solutions de mobilité complètes pour vos besoins quotidiens, professionnels et vos flottes urbaines.",
     image: "/images/transport-card.jpg",
     services: [
-      { name: "Location", icon: "Key" },
+      { name: "Location d'engin", icon: "Key" },
+      { name: "Machine à décaper et benne", icon: "Wrench" },
       { name: "Vente de voitures", icon: "BadgeCheck" },
       { name: "Gestion de vos véhicules", icon: "Settings" },
     ],
@@ -110,31 +109,31 @@ export const assurancesServices = [
     name: "Auto-Moto",
     icon: "Car",
     description:
-      "Roulez en toute sérénité avec une couverture adaptée à votre véhicule.",
+      "Roulez en toute sérénité avec une couverture adaptée à votre mobilité.",
   },
   {
     name: "Habitation",
     icon: "Home",
     description:
-      "Protégez votre foyer et vos biens contre les aléas du quotidien.",
+      "Protégez votre foyer et vos biens.",
   },
   {
     name: "Voyage",
     icon: "Plane",
     description:
-      "Voyagez l'esprit libre, où que vous alliez, avec une protection fiable.",
+      "Voyagez l'esprit libre.",
   },
   {
     name: "Multirisques",
     icon: "Umbrella",
     description:
-      "Une solution globale qui regroupe plusieurs garanties en un seul contrat.",
+      "Une solution complète qui regroupe plusieurs garanties en un seul contrat.",
   },
 ] as const;
 
 export const transportServices = [
   {
-    name: "Location",
+    name: "Location d'engin",
     icon: "Key",
     description:
       "Des véhicules adaptés à vos besoins, pour quelques heures ou plusieurs jours.",
@@ -181,20 +180,20 @@ export const values = [
 ] as const;
 
 export const about = {
-  title: "À propos de Mandiba Group",
+  title: "À propos de Mandiba Group Transport",
   intro:
-    "MANDIBA GROUP est une société ivoirienne basée à Abidjan, intervenant dans deux domaines complémentaires : le transport et les assurances.",
+    "MANDIBA GROUP Transport est une société ivoirienne basée en Côte d'Ivoire, intervenant dans plusieurs domaines : le transport urbain, la location, la vente de voitures, l'import-export de véhicules et la location de machines à décaper. Un volet assurances : assurance auto, vie, santé.",
   body: [
     "Notre vocation est d'offrir à nos clients des solutions concrètes pour leurs besoins de mobilité et de protection. À travers nos deux pôles d'activité, nous accompagnons les particuliers et les professionnels avec des services adaptés à leur quotidien.",
-    "Nous croyons qu'une entreprise de service se construit sur la confiance, la proximité et la qualité de la relation humaine. C'est cette conviction qui guide chacune de nos actions.",
+    "Nous croyons qu'une entreprise de qualité se construit sur la confiance et la proximité.",
   ],
   vision: {
     title: "Vision",
-    text: "Devenir un acteur de référence du transport et de l'assurance en Côte d'Ivoire, reconnu pour la qualité de service et la proximité avec ses clients.",
+    text: "Faciliter la mobilité aux citoyens ivoiriens et africains. Créer un cadre d'assurance pour les couches sociales les plus reculées.",
   },
   mission: {
     title: "Mission",
-    text: "Accompagner nos clients avec des solutions simples, fiables et adaptées, dans les domaines du transport et de la protection.",
+    text: "Accompagner nos clients avec des solutions simples et fiables, dans les domaines du transport et de la protection.",
   },
 } as const;
 

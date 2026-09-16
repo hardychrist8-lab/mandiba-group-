@@ -32,8 +32,8 @@ export function Activities() {
             Deux pôles, une même exigence
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            MANDIBA GROUP réunit le transport et les assurances pour offrir des
-            solutions complètes à ses clients.
+            MANDIBA GROUP Transport réunit l'assurance et le transport, la
+            gestion de vos véhicules et flottes urbaines.
           </p>
         </Reveal>
 

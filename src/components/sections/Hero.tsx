@@ -81,8 +81,8 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.15 }}
           className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-2 leading-none"
         >
-          <span className="text-white">MANDIBA</span>{" "}
-          <span className="text-accent">GROUP</span>
+          <span className="text-white">MANDIBA GROUP</span>{" "}
+          <span className="text-accent">TRANSPORT</span>
         </motion.h1>
 
         {/* Ligne décorative */}
@@ -120,7 +120,7 @@ export function Hero() {
             className="shadow-accent min-w-[240px] bg-accent hover:bg-accent/90 text-white border-0"
           >
             <Link href="#about">
-              Découvrir Mandiba Group
+              Découvrir Mandiba Group Transport
               <ChevronRight className="ml-2 h-5 w-5" />
             </Link>
           </Button>

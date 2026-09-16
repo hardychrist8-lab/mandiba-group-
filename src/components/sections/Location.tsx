@@ -87,8 +87,8 @@ export function Location() {
 
               {/* Note */}
               <p className="text-xs text-muted-foreground px-2">
-                Coordonnées approximatives du quartier. L'adresse exacte sera
-                utilisée pour un positionnement précis ultérieurement.
+                Boulangerie Flamand, Boulevard Charles Bauza Donwahi, Rue 2,
+                Cocody. Position exacte sur la carte.
               </p>
             </div>
           </Reveal>
