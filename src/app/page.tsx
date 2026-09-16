@@ -8,6 +8,7 @@ import { CeoMessage } from "@/components/sections/CeoMessage";
 import { Location } from "@/components/sections/Location";
 import { Contact } from "@/components/sections/Contact";
 import { Footer } from "@/components/sections/Footer";
+import { Catalogue } from "@/components/catalogue/Catalogue";
 import { company } from "@/data/site-data";
 
 // Données structurées JSON-LD pour le référencement (LocalBusiness)
@@ -48,6 +49,7 @@ export default function Home() {
         <Contact />
       </main>
       <Footer />
+      <Catalogue />
     </>
   );
 }

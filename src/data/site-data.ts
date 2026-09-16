@@ -25,6 +25,11 @@ export const company = {
     country: "Côte d'Ivoire",
   },
   email: "info@mandibagrouptransport.com",
+  whatsapp: {
+    number: "07 67 64 31 11",
+    tel: "+2250767643111",
+    link: "https://wa.me/2250767643111",
+  },
   phones: [
     { label: "Fixe", number: "27 24 54 96 87", tel: "+2252724549687" },
     { label: "Mobile", number: "05 44 86 12 66", tel: "+2250544861266" },
