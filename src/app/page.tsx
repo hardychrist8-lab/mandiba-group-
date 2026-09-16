@@ -5,7 +5,6 @@ import { Activities } from "@/components/sections/Activities";
 import { Assurances } from "@/components/sections/Assurances";
 import { Transport } from "@/components/sections/Transport";
 import { CeoMessage } from "@/components/sections/CeoMessage";
-import { WhyUs } from "@/components/sections/WhyUs";
 import { Location } from "@/components/sections/Location";
 import { Contact } from "@/components/sections/Contact";
 import { Footer } from "@/components/sections/Footer";
@@ -45,7 +44,6 @@ export default function Home() {
         <Assurances />
         <Transport />
         <CeoMessage />
-        <WhyUs />
         <Location />
         <Contact />
       </main>
