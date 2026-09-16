@@ -63,7 +63,6 @@ export const nav = [
   { label: "Assurances", href: "#assurances" },
   { label: "Transport", href: "#transport" },
   { label: "Direction", href: "#direction" },
-  { label: "Contact", href: "#contact" },
 ] as const;
 
 export const activities = [
