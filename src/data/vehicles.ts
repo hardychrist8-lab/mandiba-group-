@@ -29,72 +29,27 @@ export interface Vehicle {
   };
 }
 
-// Véhicules d'exemple (placeholders) — à remplacer par les vraies données
 export const vehicles: Vehicle[] = [
   {
-    id: "toyota-corolla-2019",
-    name: "Toyota Corolla 2019",
+    id: "bestune-t77",
+    name: "Bestune T77",
     type: "location",
-    price: 25000,
+    price: 50000,
     priceUnit: "/jour",
     withDriver: true,
     photos: [
-      "/vehicles/vehicle-1-ext.jpg",
-      "/vehicles/interior-1.jpg",
-      "/vehicles/vehicle-1-ext.jpg",
-      "/vehicles/interior-1.jpg",
+      "/vehicles/bestune-t77-1.jpg",
+      "/vehicles/bestune-t77-2.jpg",
+      "/vehicles/bestune-t77-3.jpg",
+      "/vehicles/bestune-t77-4.jpg",
+      "/vehicles/bestune-t77-5.jpg",
     ],
     description:
-      "Berline élégante et confortable, idéale pour vos déplacements professionnels et personnels. Spacieuse et économique.",
+      "SUV moderne et spacieux, parfait pour vos déplacements en ville comme sur autoroute. Design élégant et confort optimal. Disponible avec chauffeur.",
     specs: {
-      year: 2019,
-      fuel: "Essence",
+      year: 2022,
       seats: 5,
       transmission: "Automatique",
-    },
-  },
-  {
-    id: "hyundai-tucson-2020",
-    name: "Hyundai Tucson 2020",
-    type: "location",
-    price: 35000,
-    priceUnit: "/jour",
-    withDriver: true,
-    photos: [
-      "/vehicles/vehicle-2-ext.jpg",
-      "/vehicles/interior-1.jpg",
-      "/vehicles/vehicle-2-ext.jpg",
-      "/vehicles/interior-1.jpg",
-    ],
-    description:
-      "SUV moderne et spacieux, parfait pour les familles et les longs trajets. Position de conduite élevée et confort optimal.",
-    specs: {
-      year: 2020,
-      fuel: "Diesel",
-      seats: 5,
-      transmission: "Automatique",
-    },
-  },
-  {
-    id: "renault-clio-2018",
-    name: "Renault Clio 2018",
-    type: "location",
-    price: 18000,
-    priceUnit: "/jour",
-    withDriver: true,
-    photos: [
-      "/vehicles/vehicle-3-ext.jpg",
-      "/vehicles/interior-1.jpg",
-      "/vehicles/vehicle-3-ext.jpg",
-      "/vehicles/interior-1.jpg",
-    ],
-    description:
-      "Citadine compacte et économique, idéale pour la ville. Facile à garer et faible consommation.",
-    specs: {
-      year: 2018,
-      fuel: "Essence",
-      seats: 5,
-      transmission: "Manuelle",
     },
   },
 ];
