@@ -38,11 +38,11 @@ export const vehicles: Vehicle[] = [
     priceUnit: "/jour",
     withDriver: true,
     photos: [
-      "/vehicles/bestune-t77-1.jpg",
       "/vehicles/bestune-t77-2.jpg",
-      "/vehicles/bestune-t77-3.jpg",
       "/vehicles/bestune-t77-4.jpg",
       "/vehicles/bestune-t77-5.jpg",
+      "/vehicles/bestune-t77-1.jpg",
+      "/vehicles/bestune-t77-3.jpg",
     ],
     description:
       "SUV moderne et spacieux, parfait pour vos déplacements en ville comme sur autoroute. Design élégant et confort optimal. Disponible avec chauffeur.",
@@ -60,11 +60,11 @@ export const vehicles: Vehicle[] = [
     priceUnit: "/jour",
     withDriver: true,
     photos: [
+      "/vehicles/haval-h6-5.png",
       "/vehicles/haval-h6-1.png",
       "/vehicles/haval-h6-2.png",
-      "/vehicles/haval-h6-3.png",
       "/vehicles/haval-h6-4.png",
-      "/vehicles/haval-h6-5.png",
+      "/vehicles/haval-h6-3.png",
     ],
     description:
       "SUV élégant et puissant, offrant un excellent rapport qualité-prix. Spacieux, confortable et équipé de technologies modernes. Disponible avec chauffeur.",
