@@ -31,8 +31,8 @@ export function VehicleCard({ vehicle }: { vehicle: Vehicle }) {
           className="object-cover transition-transform duration-500 group-hover:scale-105"
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
         />
-        {/* Badge type */}
-        <div className="absolute top-2 left-2">
+        {/* Badge type + chauffeur */}
+        <div className="absolute top-2 left-2 flex flex-col gap-1">
           <span
             className={`px-2.5 py-0.5 rounded-full text-[10px] font-semibold backdrop-blur-sm ${
               vehicle.type === "location"
@@ -42,6 +42,14 @@ export function VehicleCard({ vehicle }: { vehicle: Vehicle }) {
           >
             {typeLabel}
           </span>
+          {vehicle.withDriver && (
+            <span className="px-2.5 py-0.5 rounded-full text-[10px] font-medium bg-white/90 text-primary backdrop-blur-sm flex items-center gap-1">
+              <svg className="h-2.5 w-2.5" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" />
+              </svg>
+              Avec chauffeur
+            </span>
+          )}
         </div>
       </div>
 

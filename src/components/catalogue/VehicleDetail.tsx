@@ -172,6 +172,14 @@ export function VehicleDetail({ vehicle }: { vehicle: Vehicle }) {
               {vehicle.priceUnit}
             </div>
           )}
+          {vehicle.withDriver && (
+            <div className="mt-2 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary/10 text-primary text-xs font-semibold">
+              <svg className="h-3.5 w-3.5" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" />
+              </svg>
+              Avec chauffeur
+            </div>
+          )}
         </div>
       </div>
 

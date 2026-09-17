@@ -18,6 +18,7 @@ export interface Vehicle {
   type: VehicleType;
   price: number; // FCFA
   priceUnit: string; // "/jour" pour location, "" pour vente
+  withDriver: boolean; // disponible avec chauffeur
   photos: string[];
   description: string;
   specs: {
@@ -36,6 +37,7 @@ export const vehicles: Vehicle[] = [
     type: "location",
     price: 25000,
     priceUnit: "/jour",
+    withDriver: true,
     photos: [
       "/vehicles/vehicle-1-ext.jpg",
       "/vehicles/interior-1.jpg",
@@ -57,6 +59,7 @@ export const vehicles: Vehicle[] = [
     type: "location",
     price: 35000,
     priceUnit: "/jour",
+    withDriver: true,
     photos: [
       "/vehicles/vehicle-2-ext.jpg",
       "/vehicles/interior-1.jpg",
@@ -78,6 +81,7 @@ export const vehicles: Vehicle[] = [
     type: "location",
     price: 18000,
     priceUnit: "/jour",
+    withDriver: true,
     photos: [
       "/vehicles/vehicle-3-ext.jpg",
       "/vehicles/interior-1.jpg",
@@ -107,11 +111,12 @@ export function formatPrice(price: number): string {
  */
 export function buildWhatsappMessage(vehicle: Vehicle): string {
   const typeLabel = vehicle.type === "location" ? "location" : "vente";
+  const chauffeurLabel = vehicle.withDriver ? " avec chauffeur" : "";
   const priceStr =
     formatPrice(vehicle.price) + (vehicle.priceUnit || "");
   return (
     `Bonjour MANDIBA GROUP Transport, je suis intéressé(e) par le véhicule ` +
-    `${vehicle.name} disponible en ${typeLabel} à ${priceStr}. ` +
+    `${vehicle.name} disponible en ${typeLabel}${chauffeurLabel} à ${priceStr}. ` +
     `Est-il toujours disponible ?`
   );
 }
