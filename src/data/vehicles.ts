@@ -52,6 +52,28 @@ export const vehicles: Vehicle[] = [
       transmission: "Automatique",
     },
   },
+  {
+    id: "haval-h6",
+    name: "Haval H6",
+    type: "location",
+    price: 50000,
+    priceUnit: "/jour",
+    withDriver: true,
+    photos: [
+      "/vehicles/haval-h6-1.png",
+      "/vehicles/haval-h6-2.png",
+      "/vehicles/haval-h6-3.png",
+      "/vehicles/haval-h6-4.png",
+      "/vehicles/haval-h6-5.png",
+    ],
+    description:
+      "SUV élégant et puissant, offrant un excellent rapport qualité-prix. Spacieux, confortable et équipé de technologies modernes. Disponible avec chauffeur.",
+    specs: {
+      year: 2022,
+      seats: 5,
+      transmission: "Automatique",
+    },
+  },
 ];
 
 /**
