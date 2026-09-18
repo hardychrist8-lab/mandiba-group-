@@ -74,6 +74,27 @@ export const vehicles: Vehicle[] = [
       transmission: "Automatique",
     },
   },
+  {
+    id: "haval-jolion",
+    name: "Haval Jolion",
+    type: "location",
+    price: 50000,
+    priceUnit: "/jour",
+    withDriver: true,
+    photos: [
+      "/vehicles/haval-jolion-1.png",
+      "/vehicles/haval-jolion-2.png",
+      "/vehicles/haval-jolion-3.png",
+      "/vehicles/haval-jolion-4.png",
+    ],
+    description:
+      "SUV compact moderne et économique, idéal pour la ville et les trajets quotidiens. Design dynamique et confort soigné. Disponible avec chauffeur.",
+    specs: {
+      year: 2022,
+      seats: 5,
+      transmission: "Automatique",
+    },
+  },
 ];
 
 /**
